@@ -5,7 +5,9 @@ Allan 方差的计算步骤如下：
 3.计算方差：对每个时间间隔内的差值进行平方并求平均，得到方差。 重复计算：重复上述步骤，不断增大时间间隔，得到一系列方差值。
 4.绘制 Allan 方差图：将得到的方差值按时间间隔的对数尺度绘制成图表，即可得到 Allan 方差图。
 5.通过分析 Allan 方差图，可以识别出频率稳定性的特征，例如白噪声、布朗噪声和随机游走等。
-6.本文参考https://github.com/ori-drs/allan_variance_ros代码，重构了相关代码，去除ROS环境需求。
+6.本文参考
+https://github.com/ori-drs/allan_variance_ros
+在其基础上重构了相关代码，去除ROS环境需求，使得使用更加方便。
 
 ![acceleration](data/acceleration.png)
 ![gyro](data/gyro.png)
